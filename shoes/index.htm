@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>responsive nike shoe website </title>
+   <!-- include the SweetAlert library in your HTML file-->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- include the Swiper bundle in your HTML file-->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css\style.css">
+
+<script src="js\contact-form.js"></script>
+<style>
+   .box {
+       display: block;
+       margin-bottom: 10px;
+   }
+   .btn {
+       display: block;
+       margin-top: 10px;
+   }
+   .error-message {
+       color: red;
+       font-size: 14px;
+       margin-top: 5px;
+   }
+</style>
+</head>
+<body>
+
+<!-- banner section starts  -->
+
+<section class="banner" id="banner">
+
+   <div class="content">
+      <span>Up to 15% off</span>
+      <h3>Discover Our Latest Shoe Collection</h3>
+      <p>Introducing our newest selection of premium shoes - perfect for every occasion. Whether you're looking for stylish everyday wear or high-performance athletic shoes, our collection combines comfort, innovation, and style.
+         <br>
+         Shop now and enjoy up to 15% off your first purchase. Find your perfect pair today!
+      </p>
+      <a href="#products" class="btn">Explore Now</a>
+   </div>
+
+   <div class="image">
+      <img src="images/pic1.png" alt="Shoe Collection">
+   </div>
+
+</section>
+
+
+<!-- banner section ends -->
+
+<!-- prodcuts section starts  -->
+<section class="products" id="products">
+
+   <h1 class="heading"> our <span>products</span> </h1>
+
+   <div class="swiper products-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <img src="images/pic6.png" alt="">
+            <h3>Nike Air Max 270</h3>
+            <div class="btn" data-product="product-1">see details</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic5.png" alt="">
+            <h3>Adidas UltraBoost</h3>
+            <div class="btn" data-product="product-2">see details</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic4.png" alt="">
+            <h3>Puma RS-X3</h3>
+            <div class="btn" data-product="product-3">see details</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic3.jpg" alt="">
+            <h3>Reebok Classic Leather</h3>
+            <div class="btn" data-product="product-4">see details</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic2.jpg" alt="">
+            <h3>New Balance 990v5</h3>
+            <div class="btn" data-product="product-5">see details</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic1.png" alt="">
+            <h3>ASICS Gel-Kayano 27</h3>
+            <div class="btn" data-product="product-6">see details</div>
+         </div>
+
+      </div>
+   </div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- product preview section starts -->
+
+<section class="products-preview-container">
+
+   <div class="product-preview" data-target="product-1">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/pic6.png" alt="">
+      </div>
+      <div class="content">
+         <h3>Nike Air Max 270</h3>
+         <p>The Nike Air Max 270 features a large Air Max unit in the heel for a smooth and comfortable ride.</p>
+         <div class="price">$150.00</div>
+         <a href="info.htm" target="_blank" class="btn">buy now</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-2">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/pic5.png" alt="">
+      </div>
+      <div class="content">
+         <h3>Adidas UltraBoost</h3>
+         <p>Known for its responsive Boost midsole, the Adidas UltraBoost offers incredible energy return and comfort.</p>
+         <div class="price">$180.00</div>
+         <a href="info.htm" target="_blank" class="btn">buy now</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-3">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/pic4.png" alt="">
+      </div>
+      <div class="content">
+         <h3>Puma RS-X3</h3>
+         <p>The Puma RS-X3 brings a retro vibe with its bold, exaggerated design and RS technology for cushioning.</p>
+         <div class="price">$110.00</div>
+         <a href="info.htm" target="_blank" class="btn">buy now</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-4">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/pic3.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Reebok Classic Leather</h3>
+         <p>The Reebok Classic Leather is an iconic sneaker with a timeless design and comfortable fit.</p>
+         <div class="price">$75.00</div>
+         <a href="info.htm" target="_blank" class="btn">buy now</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-5">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/pic2.png" alt="">
+      </div>
+      <div class="content">
+         <h3>New Balance 990v5</h3>
+         <p>The New Balance 990v5 is a premium running shoe that combines cushioning and stability.</p>
+         <div class="price">$175.00</div>
+         <a href="info.htm" target="_blank" class="btn">buy now</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-6">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/pic1.png" alt="">
+      </div>
+      <div class="content">
+         <h3>ASICS Gel-Kayano 27</h3>
+         <p>The ASICS Gel-Kayano 27 offers excellent support and cushioning for long-distance running.</p>
+         <div class="price">$160.00</div>
+         <a href="info.htm" target="_blank" class="btn">buy now</a>
+      </div>
+   </div>
+
+</section>
+
+
+<!-- product preview section ends -->
+
+<!-- services section starts  -->
+
+<section class="service">
+
+   <div class="box">
+      <i class="fas fa-shipping-fast"></i>
+      <p>free delivery</p>
+   </div>
+
+   <div class="box">
+      <i class="fas fa-redo"></i>
+      <p>10 days return</p>
+   </div>
+
+   <div class="box">
+      <i class="fas fa-headset"></i>
+      <p>24/7 support</p>
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- reviews section starts  -->
+<section class="reviews" id="reviews">
+
+   <h1 class="heading"> Clients' <span>Reviews</span> </h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>
+               The Nike Air Max 270 shoes are fantastic! They provide excellent support and are very comfortable. I wear them for long walks and they never disappoint.
+            </p>
+            <img src="images/person5.png" alt="Nike Air Max 270">
+            <h3>John Doe</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>
+               I absolutely love my Adidas UltraBoost shoes! The cushioning is superb and they are perfect for running. Highly recommended for anyone looking for a lightweight and responsive shoe.
+            </p>
+            <img src="images/person6.jpg" alt="Adidas UltraBoost">
+            <h3>Emily Davis</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>
+               The Puma RS-X3 shoes are my favorite! They are stylish and comfortable, and the RS technology provides great cushioning. Great for both everyday wear and workouts.
+            </p>
+            <img src="images/person4.jpg" alt="Puma RS-X3">
+            <h3>Daniel Walker</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>
+               Reebok Classic Leather shoes are perfect for daily use. They are lightweight and provide a classic look and comfortable fit.
+            </p>
+            <img src="images/person2.jpg" alt="Reebok Classic Leather">
+            <h3>Sophia Clark</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>
+               The New Balance 990v5 shoes are amazing! They are designed for comfort and stability, making them perfect for both running and everyday wear.
+            </p>
+            <img src="images/person3.jpg" alt="New Balance 990v5">
+            <h3>William Adams</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>
+               ASICS Gel-Kayano 27 shoes are my go-to for long-distance running. They offer excellent support and cushioning, keeping my feet comfortable even on long runs.
+            </p>
+            <img src="images/person1.png" alt="ASICS Gel-Kayano 27">
+            <h3>Mei Lin</h3>
+         </div>
+         
+      </div>
+
+   </div>
+
+</section>
+
+
+<!-- reviews section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading"> <span>contact</span> us </h1>
+
+   <div class="row">
+      
+      <form name="form" action="contact-form.php" method="post" onsubmit="return validateForm()">
+         <input type="text" id="name" name="name" placeholder="Name" class="box">
+         <div id="nameError" class="error-message"></div>
+         
+         <input type="text" id="email" name="email" placeholder="Email" class="box">
+         <div id="emailError" class="error-message"></div>
+         
+         <input type="text" id="phone" name="phone" placeholder="Phone" class="box">
+         <div id="phoneError" class="error-message"></div>
+         
+         <textarea name="message" class="box" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+         <div id="messageError" class="error-message"></div>
+         
+         <input type="submit" value="Send Message" id="btn" class="btn">
+     </form>
+      <div class="contact-info">
+         <h3>do you have any questions?</h3>
+         <p class="grapgh">If you're unsure about a product or service offered on the website, you can use this section to ask any questions you may have.Feel free to reach out if you have any feedback as well.</p>
+         <div class="icons">
+            <i class="fas fa-map"></i>
+            <div class="info">
+               <p>Tunisia,Tunis</p>
+            </div>
+         </div>
+         <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+               <p>maz.dorra@gmail.com</p>
+               
+            </div>
+         </div>
+         <div class="icons">
+            <i class="fas fa-phone"></i>
+            <div class="info">
+               <p>+216 95 643 729</p>
+            </div>
+         </div>
+         <div class="share">
+            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="#" target="_blank" class="fab fa-twitter"></a>
+            <a href="#" target="_blank" class="fab fa-instagram"></a>
+            <a href="#" target="_blank" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+<script>
+   function validateForm() {
+       var name = document.forms["form"]["name"].value;
+       var email = document.forms["form"]["email"].value;
+       var phone = document.forms["form"]["phone"].value;
+       var message = document.forms["form"]["message"].value;
+       
+       // Reset error messages
+       document.getElementById("nameError").innerHTML = "";
+       document.getElementById("emailError").innerHTML = "";
+       document.getElementById("phoneError").innerHTML = "";
+       document.getElementById("messageError").innerHTML = "";
+       
+       var isValid = true;
+       
+       // Validate name
+       if (name == "") {
+           document.getElementById("nameError").innerHTML = "Name is required";
+           isValid = false;
+       }
+       
+       // Validate email
+       if (email == "") {
+           document.getElementById("emailError").innerHTML = "Email is required";
+           isValid = false;
+       } else if (!isValidEmail(email)) {
+           document.getElementById("emailError").innerHTML = "Invalid email format";
+           isValid = false;
+       }
+       
+       // Validate phone
+       if (phone == "") {
+           document.getElementById("phoneError").innerHTML = "Phone number is required";
+           isValid = false;
+       } else if (!isValidPhone(phone)) {
+           document.getElementById("phoneError").innerHTML = "Invalid phone number format";
+           isValid = false;
+       }
+
+       if (message == "") {
+           document.getElementById("messageError").innerHTML = "Message is required";
+           isValid = false;
+       }
+       
+       return isValid;
+   }
+   
+   function isValidEmail(email) {
+       var emailRegex = /\S+@\S+\.\S+/;
+       return emailRegex.test(email);
+   }
+   
+   function isValidPhone(phone) {
+       var phoneRegex = /^\d{8}$/; 
+       return phoneRegex.test(phone);
+   }
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   <script src="js\script.js"></script>
+
+</body>
+</html>
